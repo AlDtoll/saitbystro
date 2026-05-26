@@ -7,6 +7,32 @@
     <meta name="description" content="Делаем готовый лендинг для малого бизнеса за 30 минут. Профессиональный шаблон с вашими данными, фото и отзывами. Домен + хостинг на год. 3 000 ₽. Новосибирск.">
     <meta property="og:title" content="СайтБыстро — сайт для бизнеса за 30 минут">
     <meta property="og:description" content="Готовый лендинг для малого бизнеса за 3 000 ₽. Результат через 30 минут.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sitebystro.ru/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "СайтБыстро",
+      "description": "Создание сайтов-визиток для малого бизнеса в Новосибирске за 30 минут. Домен, хостинг и лендинг за 3000 рублей.",
+      "url": "https://sitebystro.ru",
+      "telephone": "+79529188379",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Новосибирск",
+        "addressCountry": "RU"
+      },
+      "priceRange": "3000 ₽",
+      "areaServed": "Новосибирск",
+      "offers": {
+        "@type": "Offer",
+        "name": "Сайт-визитка для бизнеса",
+        "price": "3000",
+        "priceCurrency": "RUB",
+        "description": "Готовый лендинг с доменом и хостингом на год"
+      }
+    }
+    </script>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1f2937; line-height: 1.6; }
@@ -221,6 +247,38 @@
         }
         .contact-link:hover { background: rgba(255,255,255,0.2); }
 
+        /* REVIEWS */
+        .reviews { background: #f0f9ff; }
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .review-card {
+            background: white;
+            border-radius: 14px;
+            padding: 24px 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+        }
+        .review-stars { color: #f59e0b; font-size: 1rem; margin-bottom: 10px; }
+        .review-text { font-size: 0.88rem; color: #374151; line-height: 1.6; margin-bottom: 14px; }
+        .review-author { font-size: 0.82rem; font-weight: 700; color: #6b7280; }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 20px 0;
+        }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-q { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+        .faq-a { font-size: 0.9rem; color: #4b5563; line-height: 1.6; }
+
         /* FOOTER */
         footer {
             background: #0a0f1a;
@@ -235,6 +293,7 @@
             .steps-grid { grid-template-columns: 1fr; }
             .included-grid { grid-template-columns: 1fr; }
             .examples-grid { grid-template-columns: 1fr; }
+            .reviews-grid { grid-template-columns: 1fr; }
             .hero-stats { gap: 24px; }
         }
     </style>
@@ -371,6 +430,59 @@
                     <p>Коррекционный центр, Новосибирск</p>
                 </div>
             </a>
+        </div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="container">
+        <h2 class="section-title">Что говорят клиенты</h2>
+        <p class="section-sub">Отзывы владельцев бизнеса, которым мы сделали сайт</p>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">Всё сделали быстро — буквально за полчаса. Скинул ссылку на 2ГИС, прислали готовый сайт. Очень удобно, цена адекватная.</p>
+                <div class="review-author">Александр, детский центр «Знайка»</div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">Давно думала завести сайт, но всё казалось сложно и дорого. Здесь — просто и быстро. Теперь отправляю ссылку клиентам вместо 2ГИС.</p>
+                <div class="review-author">Елена, гостевой дом «Уют»</div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">Отличный результат за эти деньги. Сайт аккуратный, на телефоне выглядит хорошо. Домен оформили сами, никакой головной боли.</p>
+                <div class="review-author">Ирина, творческая студия Art-house</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Частые вопросы</h2>
+        <p class="section-sub">Отвечаем честно</p>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-q">Сколько времени занимает создание сайта?</div>
+                <div class="faq-a">Обычно 30–60 минут с момента получения ваших данных. Если всё есть — название, телефон, фото — делаем быстро.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Что будет после первого года домена и хостинга?</div>
+                <div class="faq-a">Продление домена и хостинга стоит около 1 500–2 000 ₽ в год. Мы предупредим заранее и поможем продлить.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Можно ли потом поменять информацию на сайте?</div>
+                <div class="faq-a">Да. Небольшие правки — номер телефона, адрес, фото — делаем бесплатно в течение первого месяца.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Подойдёт ли такой сайт для продвижения в Яндексе?</div>
+                <div class="faq-a">Лендинг оптимизирован под поисковики: есть правильные мета-теги, корректная структура. Этого достаточно чтобы сайт нашли по названию компании.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Какому бизнесу это подходит?</div>
+                <div class="faq-a">Базам отдыха, гостевым домам, детским центрам, салонам, репетиторам, кафе — любому местному бизнесу, у которого нет сайта или он устарел.</div>
+            </div>
         </div>
     </div>
 </section>
