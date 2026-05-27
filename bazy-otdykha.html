@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт для базы отдыха — 3 000 ₽ под ключ | СайтБыстро</title>
+    <meta name="description" content="Создание сайта для базы отдыха и гостевого дома за 30 минут. Домен, хостинг, лендинг с вашими фото и контактами. 3 000 ₽ всё включено. Работаем по всей России.">
+    <meta property="og:title" content="Сайт для базы отдыха — 3 000 ₽ | СайтБыстро">
+    <meta property="og:description" content="Готовый лендинг для базы отдыха за 30 минут. Домен и хостинг включены.">
+    <meta property="og:image" content="https://sitebystro.ru/logo.jpg">
+    <meta property="og:url" content="https://sitebystro.ru/bazy-otdykha">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1f2937; line-height: 1.6; }
+
+        .navbar { background: #0f172a; padding: 12px 20px; display: flex; align-items: center; }
+        .navbar-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .navbar-logo img { width: 36px; height: 36px; border-radius: 6px; object-fit: cover; }
+        .navbar-logo span { color: white; font-size: 1.1rem; font-weight: 800; }
+        .navbar-logo span em { color: #60a5fa; font-style: normal; }
+
+        .hero { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%); color: white; padding: 70px 20px 60px; text-align: center; }
+        .hero-badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #93c5fd; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; margin-bottom: 20px; }
+        .hero h1 { font-size: 2.4rem; font-weight: 800; margin-bottom: 16px; line-height: 1.2; }
+        .hero h1 span { color: #60a5fa; }
+        .hero p { font-size: 1.1rem; color: #cbd5e1; max-width: 560px; margin: 0 auto 32px; }
+        .btn-primary { display: inline-block; background: #2563eb; color: white; font-size: 1rem; font-weight: 700; padding: 14px 30px; border-radius: 10px; text-decoration: none; }
+        .btn-primary:hover { background: #1d4ed8; }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        section { padding: 60px 20px; }
+        .section-title { font-size: 1.8rem; font-weight: 800; text-align: center; margin-bottom: 10px; }
+        .section-sub { text-align: center; color: #6b7280; margin-bottom: 40px; }
+
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 860px; margin: 0 auto; }
+        .why-card { background: #f0f9ff; border-radius: 14px; padding: 24px 20px; text-align: center; }
+        .why-icon { font-size: 2rem; margin-bottom: 12px; }
+        .why-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+        .why-card p { font-size: 0.85rem; color: #4b5563; }
+
+        .examples-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 820px; margin: 0 auto; }
+        .example-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-decoration: none; color: inherit; display: block; transition: transform 0.2s; }
+        .example-card:hover { transform: translateY(-3px); }
+        .example-card img { width: 100%; height: 180px; object-fit: cover; object-position: top; }
+        .example-info { padding: 14px 16px; }
+        .example-info h4 { font-size: 0.95rem; font-weight: 700; }
+        .example-info p { font-size: 0.8rem; color: #6b7280; margin-top: 3px; }
+
+        .steps-bg { background: #f8fafc; }
+        .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 860px; margin: 0 auto; }
+        .step { background: white; border-radius: 14px; padding: 28px 22px; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,0.07); }
+        .step-num { width: 44px; height: 44px; background: #2563eb; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.1rem; margin: 0 auto 14px; }
+        .step h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+        .step p { font-size: 0.88rem; color: #6b7280; }
+
+        .price-box { max-width: 500px; margin: 0 auto; background: white; border: 2px solid #2563eb; border-radius: 16px; padding: 36px 32px; text-align: center; box-shadow: 0 4px 20px rgba(37,99,235,0.1); }
+        .price-amount { font-size: 3rem; font-weight: 900; color: #2563eb; line-height: 1; }
+        .price-period { font-size: 1rem; color: #6b7280; margin-top: 4px; margin-bottom: 24px; }
+        .price-list { list-style: none; text-align: left; margin-bottom: 28px; }
+        .price-list li { padding: 6px 0; font-size: 0.95rem; color: #374151; }
+        .price-list li::before { content: "✓ "; color: #2563eb; font-weight: 700; }
+        .price-box .btn-primary { width: 100%; text-align: center; font-size: 1.05rem; padding: 16px; display: block; }
+
+        .contact { background: #0f172a; color: white; text-align: center; padding: 60px 20px; }
+        .contact h2 { font-size: 1.8rem; font-weight: 800; margin-bottom: 10px; }
+        .contact p { color: #94a3b8; margin-bottom: 32px; }
+        .contact-links { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+        .contact-link { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; text-decoration: none; padding: 12px 24px; border-radius: 10px; font-weight: 600; }
+        .contact-link:hover { background: rgba(255,255,255,0.2); }
+
+        footer { background: #0a0f1a; color: #475569; text-align: center; padding: 18px 20px; font-size: 0.8rem; }
+        footer a { color: #60a5fa; text-decoration: none; }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            .why-grid { grid-template-columns: 1fr; }
+            .steps-grid { grid-template-columns: 1fr; }
+            .examples-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="/" class="navbar-logo">
+        <img src="logo.jpg" alt="СайтБыстро">
+        <span>Сайт<em>Быстро</em></span>
+    </a>
+</nav>
+
+<section class="hero">
+    <div class="hero-badge">Базы отдыха и гостевые дома</div>
+    <h1>Сайт для базы отдыха<br><span>за 30 минут</span></h1>
+    <p>Клиенты ищут жильё в интернете. Без сайта вы теряете тех, кто не нашёл вас на картах. Исправим это за полчаса.</p>
+    <a href="https://t.me/eldtoll" class="btn-primary">💬 Заказать сайт</a>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Почему базе отдыха нужен сайт</h2>
+        <p class="section-sub">Гости принимают решение онлайн — до звонка</p>
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon">🔍</div>
+                <h3>Вас находят в поиске</h3>
+                <p>«База отдыха Горный Алтай» — люди ищут именно так. Сайт даёт шанс попасть в результаты.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">📸</div>
+                <h3>Фото убеждают лучше слов</h3>
+                <p>Домики, природа, интерьер — сайт показывает атмосферу и снимает сомнения до звонка.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">📞</div>
+                <h3>Прямые бронирования</h3>
+                <p>Кнопка «Позвонить» прямо на сайте — без посредников и комиссий агрегаторов.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="steps-bg">
+    <div class="container">
+        <h2 class="section-title">Примеры работ</h2>
+        <p class="section-sub">Реальные сайты для баз отдыха и гостевых домов</p>
+        <div class="examples-grid">
+            <a href="https://aldtoll.github.io/elki-palki-ga" target="_blank" class="example-card">
+                <img src="examples/elki-palki.jpg" alt="Ёлки Палки — база отдыха">
+                <div class="example-info">
+                    <h4>Ёлки Палки</h4>
+                    <p>База отдыха, Горный Алтай</p>
+                </div>
+            </a>
+            <a href="https://aldtoll.github.io/nash-dom-altay" target="_blank" class="example-card">
+                <img src="examples/nash-dom-altay.jpg" alt="Наш Дом-Алтай — гостевой дом">
+                <div class="example-info">
+                    <h4>Наш Дом-Алтай</h4>
+                    <p>Гостевой дом, с. Черга</p>
+                </div>
+            </a>
+            <a href="https://aldtoll.github.io/uyutny-nochleg-ga" target="_blank" class="example-card">
+                <img src="examples/uyutny-nochleg.jpg" alt="Уютный ночлег">
+                <div class="example-info">
+                    <h4>Уютный ночлег</h4>
+                    <p>Гостевой домик, Горный Алтай</p>
+                </div>
+            </a>
+            <a href="https://aldtoll.github.io/fromage-ga" target="_blank" class="example-card">
+                <img src="examples/fromage.jpg" alt="Fromage — гостевой дом">
+                <div class="example-info">
+                    <h4>Fromage</h4>
+                    <p>Гостевой дом, урочище Секей</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Как это работает</h2>
+        <p class="section-sub">Три шага — и сайт готов</p>
+        <div class="steps-grid">
+            <div class="step">
+                <div class="step-num">1</div>
+                <h3>Присылаете данные</h3>
+                <p>Название, телефон, фото домиков и территории. Подойдёт ссылка из 2ГИС или Яндекс.Карт.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <h3>Собираем сайт</h3>
+                <p>Вставляем ваши данные и фото в профессиональный шаблон. Настраиваем домен и хостинг.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <h3>Получаете ссылку</h3>
+                <p>Через 30 минут — готовый сайт на вашем домене. Можно сразу отправлять клиентам.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Стоимость</h2>
+        <p class="section-sub">Одна цена — всё включено</p>
+        <div class="price-box">
+            <div class="price-amount">3 000 ₽</div>
+            <div class="price-period">разовый платёж</div>
+            <ul class="price-list">
+                <li>Лендинг с фото вашей базы</li>
+                <li>Домен .ru на год</li>
+                <li>Хостинг на год</li>
+                <li>Мобильная версия</li>
+                <li>Кнопки звонка и мессенджеров</li>
+                <li>Результат через 30 минут</li>
+            </ul>
+            <a href="https://t.me/eldtoll" class="btn-primary">Заказать сайт</a>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="container">
+        <h2>Готовы? Напишите нам</h2>
+        <p>Пришлите фото базы — через 30 минут покажем готовый сайт</p>
+        <div class="contact-links">
+            <a href="https://t.me/eldtoll" class="contact-link">💬 Telegram</a>
+            <a href="tel:+79529188379" class="contact-link">📞 +7 (952) 918-83-79</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <a href="/">СайтБыстро</a> · Сайты для малого бизнеса · По всей России
+</footer>
+
+</body>
+</html>
