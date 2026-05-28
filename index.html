@@ -250,6 +250,31 @@
         }
         .contact-link:hover { background: rgba(255,255,255,0.2); }
 
+        /* NICHES */
+        .niches { background: #f8fafc; }
+        .niches-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        .niche-link {
+            display: block;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+            padding: 22px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .niche-link:hover { border-color: #2563eb; box-shadow: 0 4px 16px rgba(37,99,235,0.1); }
+        .niche-icon { font-size: 2rem; margin-bottom: 10px; }
+        .niche-link h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+        .niche-link p { font-size: 0.8rem; color: #6b7280; }
+
         /* REVIEWS */
         .reviews { background: #f0f9ff; }
         .reviews-grid {
@@ -327,6 +352,7 @@
             .included-grid { grid-template-columns: 1fr; }
             .examples-grid { grid-template-columns: 1fr; }
             .reviews-grid { grid-template-columns: 1fr; }
+            .niches-grid { grid-template-columns: 1fr; }
             .hero-stats { gap: 24px; }
         }
     </style>
@@ -433,6 +459,30 @@
             <p>Мы делаем сайты на основе <strong>готовых профессиональных шаблонов</strong> — это позволяет быстро и недорого создать качественный лендинг для вашего бизнеса.</p>
             <p>Шаблон наполняется вашими данными: названием, адресом, телефоном, фотографиями, отзывами клиентов и ссылками на соцсети. Каждый сайт выглядит индивидуально.</p>
             <p>Если нужна уникальная разработка с нуля, анимации и сложный функционал — это другой формат и другая цена. Мы делаем просто, быстро и по делу.</p>
+        </div>
+    </div>
+</section>
+
+<section class="niches">
+    <div class="container">
+        <h2 class="section-title">Делаем сайты для любого бизнеса</h2>
+        <p class="section-sub">Выберите свою нишу — покажем примеры и расскажем подробнее</p>
+        <div class="niches-grid">
+            <a href="/bazy-otdykha" class="niche-link">
+                <div class="niche-icon">🏕️</div>
+                <h3>Базы отдыха</h3>
+                <p>Гостевые дома, турбазы, домики</p>
+            </a>
+            <a href="/detskie-tsentry" class="niche-link">
+                <div class="niche-icon">🎨</div>
+                <h3>Детские центры</h3>
+                <p>Студии, кружки, секции</p>
+            </a>
+            <a href="/kafe" class="niche-link">
+                <div class="niche-icon">☕</div>
+                <h3>Кафе и рестораны</h3>
+                <p>Кофейни, столовые, бары</p>
+            </a>
         </div>
     </div>
 </section>
