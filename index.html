@@ -36,6 +36,7 @@
       }
     }
     </script>
+    <link rel="stylesheet" href="/blog.css">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1f2937; line-height: 1.6; }
@@ -345,6 +346,11 @@
             padding: 18px 20px;
             font-size: 0.8rem;
         }
+        footer a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+        footer a:hover { text-decoration: underline; }
 
         @media (max-width: 600px) {
             .hero h1 { font-size: 1.9rem; }
@@ -589,6 +595,17 @@
     </div>
 </section>
 
+<section class="home-blog">
+    <a href="/blog/" class="home-blog-banner">
+        <span class="home-blog-banner-icon" aria-hidden="true">📝</span>
+        <span class="home-blog-banner-text">
+            <strong>Блог</strong>
+            <span>Сайт для бизнеса, 2ГИС vs лендинг, простые советы</span>
+        </span>
+        <span class="home-blog-banner-arrow" aria-hidden="true">→</span>
+    </a>
+</section>
+
 <section>
     <div class="container">
         <h2 class="section-title">Стоимость</h2>
@@ -621,7 +638,7 @@
 </section>
 
 <footer>
-    СайтБыстро · Новосибирск · Сайты для малого бизнеса
+    СайтБыстро · Новосибирск · <a href="/blog/">Блог</a> · <a href="https://t.me/eldtoll">Telegram</a>
 </footer>
 
 </body>
